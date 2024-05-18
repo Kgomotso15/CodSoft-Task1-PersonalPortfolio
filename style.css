@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color:beige;
 }
@@ -18,25 +22,26 @@ body{
 }
 
 .container{
-    padding: 10px 10%;
+    padding: 1.5625% 10%;
 }
 
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
-
 }
 
 nav ul{
-    margin-right: auto;
+    /*margin-right: auto;*/
+    display: flex;
+    margin: 0;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 1.5625% 3.125%;
 }
 
 nav ul li a{
@@ -49,11 +54,11 @@ nav ul li a{
 nav ul li a::after{
     content:none;
     width: 100%;
-    height: 3px;
+    height: 0.46875%;
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -0.9375%;
 }
 
 .header-text{
@@ -63,19 +68,19 @@ nav ul li a::after{
 
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 1.5625%;
     color: rgb(208, 13, 136);
 }
 
 .header-text h3{
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 1.5625%;
     color: rgb(208, 13, 136);
 }
 
 .header-text p{
     font-size: 0.9em;
-    margin-top: 20px;
+    margin-top: 1.5625%;
 }
 
 /*about section*/
@@ -112,7 +117,7 @@ nav ul li a::after{
 
 .about-col-2 p{
     font-size: 1.5em;
-    margin-top: 20px;
+    margin-top: 1.5625%;
     line-height: 130%;
 }
 
@@ -156,23 +161,25 @@ nav ul li a::after{
 }
 
 #projects{
-        padding: 60px 0;
+        padding: 6.25% 0;
         color: black;
 }
 
 .projects-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 1.5625%;
 }
 
 .projects-text h3{
-    font-size:30px;
-    margin-top: 20px;
+    font-size:3.125vw;
+    margin-top: 1.5625%;
 }
 
 .projects-text p{
     line-height: 130%
 }
+
+/*contact section*/
 
 #contact{
     padding: 80px 0;
@@ -217,7 +224,7 @@ nav ul li a::after{
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
-    margin-right: 15px;
+    margin-right: 1.5625%;
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
@@ -232,7 +239,7 @@ nav ul li a::after{
     display: inline-block;
     background:rgb(208, 13, 136);
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1.5625% 3.125%;
     font-size: 16px;
     cursor: pointer;
     text-align: center;
@@ -243,5 +250,15 @@ nav ul li a::after{
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px #999;
+}
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
 }
 
